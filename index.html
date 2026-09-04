@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fitzoku — AI Personal Trainer</title>
+<style>
+  :root { --ink:#14141f; --muted:#5a5a6e; --line:#e4e4ec; --accent:#6C63FF; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#fbfbfd; color:var(--ink);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:680px; margin:0 auto; padding:80px 24px; }
+  .brand { font-size:14px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--accent); }
+  h1 { font-size:44px; line-height:1.1; margin:10px 0 12px; letter-spacing:-1px; }
+  .tag { color:var(--muted); font-size:18px; margin:0 0 40px; }
+  .card { display:block; background:#fff; border:1px solid var(--line); border-radius:14px;
+          padding:20px 22px; margin-bottom:12px; text-decoration:none; color:inherit; }
+  .card:hover { border-color:var(--accent); }
+  .card h2 { margin:0 0 4px; font-size:18px; }
+  .card p { margin:0; color:var(--muted); font-size:15px; }
+  footer { margin-top:56px; padding-top:24px; border-top:1px solid var(--line);
+           color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">Fitzoku</div>
+  <h1>Your AI Personal Trainer</h1>
+  <p class="tag">Personalised workout plans, 331 exercises with animated form guides, in 7 languages.</p>
+
+  <a class="card" href="privacy.html">
+    <h2>Privacy Policy</h2>
+    <p>What we collect, how we use it, and your rights.</p>
+  </a>
+
+  <a class="card" href="terms.html">
+    <h2>Terms of Use</h2>
+    <p>The agreement governing your use of Fitzoku.</p>
+  </a>
+
+  <footer>
+    Support: [INSERT SUPPORT EMAIL]<br><br>
+    © <span id="y"></span> Rajpoot Holding LLC. All rights reserved.
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+</div>
+</body>
+</html>
